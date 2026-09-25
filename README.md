@@ -17,7 +17,7 @@ The main idea was to collect and process data, analyse it using Python and machi
 ## Project Structure
 
 ```text
-zepto_ai_capstone/
+zepto_ai_project_2026/
 
 ├── data_pipeline/
 │   ├── run_pipeline.py
