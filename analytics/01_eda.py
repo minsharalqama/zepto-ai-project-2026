@@ -244,7 +244,6 @@ def main() -> None:
 
     cleaned, decisions = clean_by_threshold(df, missing)
     CLEAN_CSV.write_text(cleaned.to_csv(index=False), encoding="utf-8")
-    TITANIC_CSV.write_text(cleaned.to_csv(index=False), encoding="utf-8")
     print("\n=== CLEANING DECISIONS ===")
     for col, decision in decisions.items():
         print(f"{col}: {decision}")

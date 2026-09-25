@@ -33,7 +33,7 @@ from sklearn.preprocessing import OneHotEncoder, StandardScaler
 from sklearn.tree import DecisionTreeClassifier, plot_tree
 
 BASE_DIR = Path(__file__).resolve().parent
-CLEAN_CSV = BASE_DIR / "titanic.csv"
+CLEAN_CSV = BASE_DIR / "cleaned_titanic.csv"
 OUTPUT_DIR = BASE_DIR / "outputs"
 PLOTS_DIR = BASE_DIR / "plots"
 ARTIFACTS_DIR = BASE_DIR / "artifacts"
@@ -254,7 +254,7 @@ def write_model_report(
 
 def main() -> None:
     if not CLEAN_CSV.exists():
-        raise FileNotFoundError("Run 01_eda.py first so analytics/titanic.csv exists.")
+        raise FileNotFoundError("Run 01_eda.py first so analytics/cleaned_titanic.csv exists.")
 
     df = pd.read_csv(CLEAN_CSV)
     df["survived"] = df["survived"].astype(int)
