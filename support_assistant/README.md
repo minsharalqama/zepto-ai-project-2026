@@ -280,3 +280,25 @@ I tested the LangGraph flow in mock mode with both a policy question and a gener
 The FastAPI `/ask` and `/health` endpoints returned HTTP 200 during my local testing.
 
 I also built and ran the Docker image successfully with mock mode enabled.
+
+## Example API Calls
+
+### Policy question
+
+Request:
+
+```json
+{
+  "query": "What delivery fee applies to orders below INR 149?"
+}
+
+Response:
+{
+  "answer": "Based on the retrieved context: Zepto delivers grocery and household essentials to serviceable pin codes within 10 to 30 minutes of order confirmation, depending on the customer's delivery zone and current order volume. Standard del",
+  "sources": [
+    "doc_01",
+    "doc_05",
+    "doc_03"
+  ],
+  "confidence": 1.0
+}
