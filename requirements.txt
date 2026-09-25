@@ -1,0 +1,4 @@
+# Root convenience file. Each module also has a module-specific requirements.txt.
+-r data_pipeline/requirements.txt
+-r analytics/requirements.txt
+-r support_assistant/requirements.txt

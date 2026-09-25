@@ -1,0 +1,20 @@
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+env/
+.DS_Store
+.ipynb_checkpoints/
+.env
+.env.*
+*.log
+
+# Generated model/cache files that should not be committed accidentally
+support_assistant/chroma_db/*
+!support_assistant/chroma_db/.gitkeep
+
+# Keep generated charts/results in the repository for grading; ignore only temp files
+*.tmp
+
+# Local raw Titanic one-time snapshot
+analytics/.titanic_raw_snapshot.csv
