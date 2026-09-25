@@ -308,3 +308,6 @@ Prediction: 0
 ```
 
 This confirms that the saved pipeline can be loaded again and used for prediction without manually preprocessing the input first.
+
+The generated analysis files and plots are stored in the analytics outputs, plots, and artifacts directories for later review.
+Execution order: run 01_eda.py first, then run 02_modeling.py.
